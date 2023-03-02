@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/icons8-pizza-48.png">
+    <link rel="stylesheet" href="menu.css">
+    <title>Our Menu</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div>
+            <p class="navtitle">THE UPPER CRUST</p>
+            <button class="toggle-button" onclick="menu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+            <div>
+                <ul class="list" id="flex">
+                    <li class="border-bottom"><a href="index.html">home</a></li>
+                    <li class="border-bottom active"><a href="#">Our menu</a></li>                
+                    <li class="border-bottom"><a href="catring.html">Catering</a></li>                                               
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="div-max-width center">
+                <div><img src="menu images/844.jpg" alt="" class="img"></div>
+                <div><p class="card-text-margin card-heading"> Mojo's Chicken Special [BIG 10'']</p></div>
+                <div><p class="card-text-margin card-description">100% Pork Pepperoni | Roasted Chicken | Herb Chicken | Serves 2-3.</p> </div>
+                <div class="flex">
+                    <div><p>₹ 495</p></div>
+                    <div><button class="button" onclick="add()">add</button></div>
+                </div>
+            </div>
+            <div class="div-max-width center">
+                <div><img src="menu images/845.jpg" alt="" class="img"></div>
+                <div><p class="card-text-margin card-heading">Chicken Mexicano [BIG 10'']</p></div>
+                <div><p class="card-text-margin card-description">Herb Grilled Chicken | Spicy Jalapeno | Capsicum | Onion | Serves 2-3.</p></div>
+                <div class="flex">
+                    <div><p>₹ 495</p></div>
+                    <div><button class="button" onclick="add()">add</button></div>
+                </div>
+            </div>
+            <div class="div-max-width center">
+                <div><img src="menu images/846.jpg" alt="" class="img"></div>
+                <div><p class="card-text-margin card-heading">Chicken Tikka [BIG 10'']</p></div>
+                <div><p class="card-text-margin card-description">Chicken Tikka | Tomato | Onion | Serves 2-3.</p></div>
+                <div class="flex"> 
+                    <div><p>₹ 495</p></div>
+                    <div><button class="button" onclick="add()">add</button></div>
+                </div>
+            </div>
+            <div class="div-max-width center">
+                <div><img src="menu images/847.jpg" alt="" class="img"></div>
+                <div><p class="card-text-margin card-heading">Double Trouble Chicken [BIG 10'']</p></div>
+                <div><p class="card-text-margin card-description">Herb Grilled Chicken | Chicken Tikka | Black Olive | Capsicum | Serves 2-3.</p></div>
+                <div class="flex">
+                    <div><p>₹ 495</p></div>
+                    <div><button class="button" onclick="add()">add</button></div>
+                </div>
+            </div>
+            <div class="div-max-width center"> 
+                <div><img src="menu images/848.jpg" alt="" class="img"></div>
+                <div><p class="card-text-margin card-heading">Fire Me Up Chicken [BIG 10'']</p></div>
+                <div><p class="card-text-margin card-description">Spicy Peri Peri Chicken | Herb Chicken | Red Paprika | Spicy Jalepeno | Serves 2-3.</p></div>
+                <div class="flex">
+                    <div><p>₹ 495</p></div>
+                    <div><button class="button" onclick="add()">add</button></div>
+                </div>
+            </div>
+            <div class="div-max-width center">
+                <div><img src="menu images/849.jpg" alt="" class="img"></div>
+                <div><p class="card-text-margin card-heading">Chicken Italiana [BIG 10'']</p></div>
+                <div><p class="card-text-margin card-description">Garlic Roast Chicken | Smokey BBQ Chicken | Mushroom | Tomato | Serves 2-3.</p></div>
+                <div class="flex">
+                    <div><p>₹ 495</p></div>
+                    <div><button class="button" onclick="add()">add</button></div>
+                </div>
+            </div>
+            <div class="div-max-width center">
+                <div><img src="menu images/854.jpg" alt="" class="img"></div>
+                <div><p class="card-text-margin card-heading">Butter Chicken [BIG 10'']</p></div>
+                <div><p class="card-text-margin card-description">Tandoori Chicken | Capsicum | Onion | Tomato [Comes with Makhni Sauce instead of Pizza Sauce] Serves 2-3.</p></div>
+                <div class="flex">
+                    <div><p>₹ 495</p></div>
+                    <div><button class="button" onclick="add()">add</button></div>
+                </div>
+            </div>
+            <div class="div-max-width center">
+                <div><img src="menu images/861.jpg" alt="" class="img"></div>
+                <div><p class="card-text-margin card-heading">Classic Pepperoni [BIG 10'']</p></div>
+                <div><p class="card-text-margin card-description">Loaded with 100% Pork Pepperoni | Extra Cheese | Serves 2-3.</p></div>
+                <div class="flex">
+                    <div><p>₹ 495</p></div>
+                    <div><button class="button" onclick="add()">add</button></div>
+                </div>
+            </div>
+            
+        </main>
+        <div id="checkout">
+                <p>Total Amount:<span id="price">₹100</span></p>
+                <a href="order.html" class="button">Check Out</a>
+            </div>
+    <footer class="footer">
+            <div>
+               <img src="images/Logo.png" alt=""> 
+            </div>
+                <div>
+                    <ul>
+                        <li><a href="#">OUR MENU</a></li>
+                        <li><a href="catring.html">CATRING</a></li>
+                        <li><a href="contact.html">CAREERS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/sammit-badodekar-124663241" target="_blank">LINKEDIN</a></li>
+                        <li><a href="https://www.facebook.com/sammit.badodekar.399?mibextid=ZbWKwL" target="_blank">FACEBOOK</a></li>
+                        <li><a href="https://twitter.com/SammitBadodekar?t=BhN3et2iD1uLnq8ILmNz_w&s=09" target="_blank">TWITTER</a></li>
+                        <li><a href="https://www.instagram.com/sammitbadodekar" target="_blank">INSTAGRAM</a></li>
+                    </ul>
+                </div>
+        <div>
+            <p>hello@theuppercrust.pizza</p>
+            <p>Copyright © The Upper Crust 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

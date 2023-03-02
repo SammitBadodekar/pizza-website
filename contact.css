@@ -1,0 +1,62 @@
+:root{
+    --font-bold:'Alfa Slab One',sans-serif;
+    --font-strong:'Russo One', sans-serif;
+    --font-regular:'Yantramanav', sans-serif;
+    --font-button: monospace;
+    --bg-color-reg: hsl(114, 61%, 94%);
+    --bg-color-blur: hsla(114, 61%, 94%, 0.135);
+    --color-sub:#ff3838;
+    --color-hover:hsl(244, 100%, 83%);
+    --text-color-dark: hsl(0,0,0);
+    --text-color-light: rgb(255, 255, 255);
+}
+body{
+    color: var(--text-color);
+    background-color: var(--bg-color-reg);
+    background-image: url(images/join-our-team-concept-with-team-people-working-together-free-vector.jpg);
+    font-family: var(--font-regular);
+}
+.button{
+    background-color: var(--color-sub);
+    color: var(--text-color-light);
+    font-family: var(--font-strong);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.7rem;
+}
+.button:hover{
+    background-color: var(--color-hover);
+}
+.placeorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--text-color-light);
+    width: 30%;
+    border-radius: 1rem;
+    margin-top: 5rem;
+    box-shadow: .1rem .1rem 1rem;
+}
+.card-heading{
+    font-family: var(--font-bold);
+    font-weight: 900;
+}
+a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: var(--text-color-dark);
+}
+a:hover{
+    color: #333;
+}
+@media screen and (max-width:600px) {
+    .placeorder{
+       width:80%;
+       margin: auto; 
+    }
+}
