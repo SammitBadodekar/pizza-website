@@ -189,4 +189,7 @@ main{
         gap: 1rem;
         margin: auto;
     }
+    #checkout{
+        padding-bottom: 2rem; 
+    }
 }
