@@ -167,6 +167,7 @@ a{
         display: flex;
         border: none;
         background-color: transparent;
+        transition: all 0.3s linear;
     }
     .nav{
         display: flex;
@@ -176,9 +177,6 @@ a{
     .list{
         display: none;
         flex-direction: column;
-    }
-    .list.active{
-        display: flex;
     }
     main{
         grid-template-columns: 1fr;

@@ -1,9 +1,11 @@
 function menu (){
     if (document.getElementById("flex").style.display === "flex"){
         document.getElementById("flex").style.display = "none"
+        document.getElementById("bar").style.transform = "rotate(0deg)"
     }
     else{
         document.getElementById("flex").style.display = "flex" 
+        document.getElementById("bar").style.transform = "rotate(90deg)"
     }
     
 }
