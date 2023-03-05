@@ -163,6 +163,7 @@ main{
         display: flex;
         border: none;
         background-color: transparent;
+        transition: all 0.3s linear;
     }
     .nav{
         display: flex;
