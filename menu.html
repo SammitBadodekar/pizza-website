@@ -7,7 +7,6 @@
     <link rel="icon" href="icons/icons8-pizza-48.png">
     <link rel="stylesheet" href="menu.css">
     <title>Our Menu</title>
-    <script src="index.js"></script>
 </head>
 <body>
     <nav class="nav">
@@ -34,7 +33,12 @@
                 <div><p class="card-text-margin card-description">100% Pork Pepperoni | Roasted Chicken | Herb Chicken | Serves 2-3.</p> </div>
                 <div class="flex">
                     <div><p>₹ 495</p></div>
-                    <div><button class="button" onclick="add()">add</button></div>
+                    <div><button class="button">add</button></div>
+                    <div class="inc-dec">
+                        <button class="button2" onclick="dec(1)">-</button>
+                        <span class="qty">1</span>
+                        <button class="button2" onclick="inc(1)">+</button>
+                    </div>
                 </div>
             </div>
             <div class="div-max-width center">
@@ -43,7 +47,12 @@
                 <div><p class="card-text-margin card-description">Herb Grilled Chicken | Spicy Jalapeno | Capsicum | Onion | Serves 2-3.</p></div>
                 <div class="flex">
                     <div><p>₹ 495</p></div>
-                    <div><button class="button" onclick="add()">add</button></div>
+                    <div><button class="button">add</button></div>
+                    <div class="inc-dec">
+                        <button class="button2" onclick="dec(2)">-</button>
+                        <span class="qty">1</span>
+                        <button class="button2" onclick="inc(2)">+</button>
+                    </div>
                 </div>
             </div>
             <div class="div-max-width center">
@@ -52,7 +61,12 @@
                 <div><p class="card-text-margin card-description">Chicken Tikka | Tomato | Onion | Serves 2-3.</p></div>
                 <div class="flex"> 
                     <div><p>₹ 495</p></div>
-                    <div><button class="button" onclick="add()">add</button></div>
+                    <div><button class="button">add</button></div>
+                    <div class="inc-dec">
+                        <button class="button2" onclick="dec(3)">-</button>
+                        <span class="qty">1</span>
+                        <button class="button2" onclick="inc(3)">+</button>
+                    </div>
                 </div>
             </div>
             <div class="div-max-width center">
@@ -61,7 +75,12 @@
                 <div><p class="card-text-margin card-description">Herb Grilled Chicken | Chicken Tikka | Black Olive | Capsicum | Serves 2-3.</p></div>
                 <div class="flex">
                     <div><p>₹ 495</p></div>
-                    <div><button class="button" onclick="add()">add</button></div>
+                    <div><button class="button">add</button></div>
+                    <div class="inc-dec">
+                        <button class="button2" onclick="dec(4)">-</button>
+                        <span class="qty">1</span>
+                        <button class="button2" onclick="inc(4)">+</button>
+                    </div>
                 </div>
             </div>
             <div class="div-max-width center"> 
@@ -70,7 +89,12 @@
                 <div><p class="card-text-margin card-description">Spicy Peri Peri Chicken | Herb Chicken | Red Paprika | Spicy Jalepeno | Serves 2-3.</p></div>
                 <div class="flex">
                     <div><p>₹ 495</p></div>
-                    <div><button class="button" onclick="add()">add</button></div>
+                    <div><button class="button">add</button></div>
+                    <div class="inc-dec">
+                        <button class="button2" onclick="dec(5)">-</button>
+                        <span class="qty">1</span>
+                        <button class="button2" onclick="inc(5)">+</button>
+                    </div>
                 </div>
             </div>
             <div class="div-max-width center">
@@ -79,7 +103,12 @@
                 <div><p class="card-text-margin card-description">Garlic Roast Chicken | Smokey BBQ Chicken | Mushroom | Tomato | Serves 2-3.</p></div>
                 <div class="flex">
                     <div><p>₹ 495</p></div>
-                    <div><button class="button" onclick="add()">add</button></div>
+                    <div><button class="button">add</button></div>
+                    <div class="inc-dec">
+                        <button class="button2" onclick="dec(6)">-</button>
+                        <span class="qty">1</span>
+                        <button class="button2" onclick="inc(6)">+</button>
+                    </div>
                 </div>
             </div>
             <div class="div-max-width center">
@@ -88,7 +117,12 @@
                 <div><p class="card-text-margin card-description">Tandoori Chicken | Capsicum | Onion | Tomato [Comes with Makhni Sauce instead of Pizza Sauce] Serves 2-3.</p></div>
                 <div class="flex">
                     <div><p>₹ 495</p></div>
-                    <div><button class="button" onclick="add()">add</button></div>
+                    <div><button class="button">add</button></div>
+                    <div class="inc-dec">
+                        <button class="button2" onclick="dec(7)">-</button>
+                        <span class="qty">1</span>
+                        <button class="button2" onclick="inc(7)">+</button>
+                    </div>
                 </div>
             </div>
             <div class="div-max-width center">
@@ -97,14 +131,81 @@
                 <div><p class="card-text-margin card-description">Loaded with 100% Pork Pepperoni | Extra Cheese | Serves 2-3.</p></div>
                 <div class="flex">
                     <div><p>₹ 495</p></div>
-                    <div><button class="button" onclick="add()">add</button></div>
+                    <div><button class="button">add</button></div>
+                    <div class="inc-dec">
+                        <button class="button2" onclick="dec(8)">-</button>
+                        <span class="qty">1</span>
+                        <button class="button2" onclick="inc(8)">+</button>
+                    </div>
                 </div>
             </div>
             
         </main>
         <div id="checkout">
                 <p>Total Amount:<span id="price">₹100</span></p>
-                <a href="order.html" class="button">Check Out</a>
+                <button class="button checkout">Check Out</button>
+            </div>
+            <div id="checkout-cart">
+                <p class="order-heading">My Orders</p>
+                <div class="flex2">
+                     <img src="menu images/844.jpg" alt="" class="order-img">
+                    <div>
+                        <p class="order-pizza">pizza</p>
+                        <p class="order-qty">QTY: 1</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                     <img src="menu images/844.jpg" alt="" class="order-img">
+                    <div>
+                        <p class="order-pizza">pizza</p>
+                        <p class="order-qty">QTY: 1</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                     <img src="menu images/844.jpg" alt="" class="order-img">
+                    <div>
+                        <p class="order-pizza">pizza</p>
+                        <p class="order-qty">QTY: 1</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                     <img src="menu images/844.jpg" alt="" class="order-img">
+                    <div>
+                        <p class="order-pizza">pizza</p>
+                        <p class="order-qty">QTY: 1</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                     <img src="menu images/844.jpg" alt="" class="order-img">
+                    <div>
+                        <p class="order-pizza">pizza</p>
+                        <p class="order-qty">QTY: 1</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                     <img src="menu images/844.jpg" alt="" class="order-img">
+                    <div>
+                        <p class="order-pizza">pizza</p>
+                        <p class="order-qty">QTY: 1</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                     <img src="menu images/844.jpg" alt="" class="order-img">
+                    <div>
+                        <p class="order-pizza">pizza</p>
+                        <p class="order-qty">QTY: 1</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                     <img src="menu images/844.jpg" alt="" class="order-img">
+                    <div>
+                        <p class="order-pizza">pizza</p>
+                        <p class="order-qty">QTY: 1</p>
+                    </div>
+                </div>
+                <p>Total Amount:<span id="amount">₹495</span></p>
+                <button class="button"><a href="order.html">Place Order</a></button>
+                <button class="button4">Back To Menu</button>
             </div>
     <footer class="footer">
             <div>
@@ -130,5 +231,6 @@
             <p>Copyright © The Upper Crust 2023 All Rights Reserved</p>
         </div>
     </footer>
+    <script defer src="index.js"></script>
 </body>
 </html>

@@ -49,14 +49,40 @@ body{
     border-bottom: 0.2rem solid var(--color-sub);
 }
 .button{
+    display:block;
     background-color: var(--color-sub);
     color: var(--text-color-light);
     font-family: var(--font-strong);
     border: none;
     text-transform: uppercase;
     padding: 0.7rem;
+    max-width: 10rem;
+}
+.button2{
+    border-radius: 0.2rem;
+    background-color: var(--color-sub);
+    color: var(--text-color-light);
+    font-family: var(--font-strong);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    margin: -0.5rem 0.5rem;
+}
+.button3{
+    border: none;
+    background-color: transparent;
+}
+.button4{
+    border: none;
+    justify-content: flex-start;
+    align-self: self-start;
+    background-color: transparent;
+    max-width: 10rem;
 }
 .button:hover{
+    background-color: var(--color-hover);
+}
+.button2:hover{
     background-color: var(--color-hover);
 }
 .list{
@@ -79,8 +105,9 @@ main{
 }
 .flex{
     display: flex;
-    justify-content:center;
-    gap: 15rem;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    margin: 0rem 1rem;
 }
 .active{
     border-bottom: 0.2rem solid var(--color-sub);
@@ -110,6 +137,12 @@ main{
     font-family: var(--font-button);
     font-weight: 400;
 }
+.inc-dec{
+    display: none;
+}
+#qty{
+    padding: 0.5rem;
+}
 #checkout{
     display:none;
     background-color: var(--text-color-light);
@@ -121,6 +154,37 @@ main{
     position: sticky;
     bottom: 0;
     box-shadow: 0.1rem 0.1rem 1rem;
+}
+#checkout-cart{
+    display: none;
+    margin: 0rem 1rem 1rem 1rem;
+    gap: 0.5rem;
+}
+.flex2{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--text-color-light);
+    box-shadow: 0.1rem 0.1rem 0.5rem;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+.order-active{
+    display: flex;
+}
+.order-heading{
+    background-color: var(--color-sub);
+    color: var(--text-color-light);
+    text-align: center;
+    font-size: large;
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.order-img{
+    width: 7rem;
+    height: 5rem;
+    object-fit: cover;
 }
 .footer{
     display: grid;
@@ -182,6 +246,18 @@ main{
         gap: 1rem;
         max-width: 100%;
     }
+    .button2{
+        background-color: var(--color-sub);
+        color: var(--text-color-light);
+        height: 2rem;
+        border: none;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        margin: 0rem 0.5rem;
+    }
+    .button,.button4{
+        max-width: 100%;
+    }
     .footer{
         grid-template-columns: 1fr;
         justify-content: center;
@@ -191,6 +267,7 @@ main{
         margin: auto;
     }
     #checkout{
+        
         padding-bottom: 2rem; 
     }
 }
