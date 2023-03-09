@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
 :root{
     --font-bold:'Alfa Slab One',sans-serif;
     --font-strong:'Russo One', sans-serif;
@@ -10,53 +16,183 @@
     --text-color-dark: hsl(0,0,0);
     --text-color-light: rgb(255, 255, 255);
 }
+
 body{
     color: var(--text-color);
-    background-image: url(images/gyanjee-caterers-10.jpg);
     background-color: var(--bg-color-reg);
     font-family: var(--font-regular);
 }
+.nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:var(--bg-color-blur);
+    backdrop-filter: blur(0.5rem);
+    font-family: var(--font-strong);
+    text-transform: uppercase;
+    padding: 1rem;
+    z-index: 3;
+}
+.navtitle{
+    font-family: var(--font-regular);
+    font-weight: bolder;
+}
+.border-bottom{
+    font-family: var(--font-strong);
+    font-weight: bolder;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: var(--font-strong);
+    font-weight: bolder;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.border-bottom:hover{
+    border-bottom: 0.2rem solid var(--color-sub);
+}
 .button{
+    display:block;
     background-color: var(--color-sub);
     color: var(--text-color-light);
     font-family: var(--font-strong);
     border: none;
     text-transform: uppercase;
     padding: 0.7rem;
+    max-width: 10rem;
 }
 .button:hover{
     background-color: var(--color-hover);
 }
-.placeorder{
+.list{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: auto;
+    list-style-type: none;
     gap: 1rem;
-    padding: 1rem;
-    background-color: var(--text-color-light);
-    width: 30%;
-    border-radius: 1rem;
-    margin-top: 5rem;
-    box-shadow: .1rem .1rem 1rem;
-}
-.card-heading{
-    font-family: var(--font-bold);
-    font-weight: 900;
+    align-items: center;
 }
 a{
-    font-size: 0.7rem;
-    text-decoration: none;
     color: var(--text-color-dark);
 }
-a:hover{
-    color: #333;
+.flex{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    margin: 0rem 1rem;
 }
-@media screen and (max-width:600px) {
-    .placeorder{
-       width:80%;
-       margin: auto; 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: -15rem 0rem 0.7rem 0rem;
+}
+main{
+    display: grid;
+    gap: 4rem;
+    margin: 1rem 2rem;
+}
+iframe{
+    width: 100%;
+    box-shadow: 0rem 0rem 0.5rem;
+    margin-top: 1rem;
+}
+.active{
+    border-bottom: 0.2rem solid var(--color-sub);
+}
+img{
+    width: 50%;
+}
+h2{
+    font-family: var(--font-strong);
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+main li{
+    list-style-type: none;
+    margin: 0.5rem 0rem;
+    font-family: var(--font-bold);
+    font-weight: bold;
+    color: var(--color-sub);
+    text-transform: uppercase;
+}
+.vertical-nav{
+    position:sticky;
+    top: 4rem;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    background-color: var(--color-sub);
+    color: var(--text-color-light);
+    padding: 2rem;
+    gap: 3rem;
+}
+.footer ul {
+    list-style-type: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.toggle-button{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+@media screen and (max-width: 600px){
+    .center{
+        margin: 1rem;
+    }
+    .flex{
+        gap: 5rem;
+    }
+    .toggle-button{
+        display: flex;
+        border: none;
+        background-color: transparent;
+        transition: all 0.3s linear;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navtitle{
+        margin-left: -9rem;
+    }
+    .list{
+        display: none;
+        flex-direction: column;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        margin-top: 0rem;
+    }
+    .vertical-nav{
+        position:static;
+    }
+    img{
+        width: 100%;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: auto;
     }
 }

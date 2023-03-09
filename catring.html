@@ -6,22 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="icons/icons8-pizza-48.png">
     <link rel="stylesheet" href="catring.css">
-    <script src="index.js"></script>
-    <title>Catring</title>
+    <script defer src="index.js"></script>
+    <title>locations</title>
 </head>
 <body>
-    <div class="placeorder">
-        <P class="card-heading">Organize A Function</P>
-        <div><label for="name">Name:</label>
-             <input type="text" id="name" placeholder="john cena" required>
+    <nav class="nav">
+        <div>
+            <p class="navtitle">THE UPPER CRUST</p>
+            <button class="toggle-button" id="bar" onclick="menu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+            <div>
+                <ul class="list" id="flex">
+                    <button class="border-bottom" onclick="location.href='index.html'">home</button>                
+                    <button class="border-bottom " onclick="location.href='menu.html'">Our menu</button>                
+                    <button class="border-bottom active" onclick="location.href='catring.html'">Locations</button>                
+                    <button class="button" onclick="location.href='menu.html'">Order Now</button>                
+                </ul>
             </div>
-             <div><label for="phno.">phone:</label>
-             <input type="text" id="phno" placeholder="111 111 1111"required>
+        </nav>
+        <main>
+            <div><img src="images/locations-header-1.png" alt=""></div>
+            <div class="vertical-nav">
+                    <h2>PUNE</h2>
+                    <ul class="vertical-nav-links">
+                        <li><a href="#sec1">FC Road</a></li>
+                        <li><a href="#sec2">Shivaji Nagar</a></li>
+                        <li><a href="#sec3">Baner High Street</a></li>
+                        <li><a href="#sec4">City Pride Road</a></li>
+                        <li><a href="#sec5">Koregaon Park</a></li>
+                    </ul>
+                </div>
+            <div class="grid">
+                <div></div>
+                 <div>
+                    <div id="sec1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2559852207232!2d73.8394290136719!3d18.51733077410909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07f4daa097f%3A0xce339b60765d5009!2sFergusson%20College%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1678366038079!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h2>fc road</h2>
+                        <p> We are on khanduji baba chowk,FC road,pune</p>
+                        <br>
+                        <p>HOURS:</p>
+                        <br>
+                        <p>Sunday - Wednesday 11 AM - 10 PM <br>Thursday - Saturday 11 AM - 11 PM </p>
+                        <br>
+                        <p>Contact us at 617-723-9600</p>
+                    </div>
+                    <div id="sec2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30263.277147956003!2d73.82478984798979!3d18.532984884044918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0791d785177%3A0x20d86a81ca743dc8!2sShivajinagar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1678368372642!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h2>Shivaji Nagar</h2>
+                        <p> We are on pune university road,shivaji nagar,pune</p>
+                        <br>
+                        <p>HOURS:</p>
+                        <br>
+                        <p>Sunday - Wednesday 11 AM - 10 PM <br>Thursday - Saturday 11 AM - 11 PM </p>
+                        <br>
+                        <p>Contact us at 617-723-9600</p>
+                    </div>
+                    <div id="sec3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.396962178647!2d73.7747326441862!3d18.55613389398122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bec69d7311a5%3A0x80d273fc35a1eee8!2sBaner%20High%20St%2C%20Baner%2C%20Pune%2C%20Maharashtra%20411045!5e0!3m2!1sen!2sin!4v1678368433911!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h2>Baner High Street</h2>
+                        <p> We are on M Agile,Baner,pune</p>
+                        <br>
+                        <p>HOURS:</p>
+                        <br>
+                        <p>Sunday - Wednesday 11 AM - 10 PM <br>Thursday - Saturday 11 AM - 11 PM </p>
+                        <br>
+                        <p>Contact us at 617-723-9600</p>
+                    </div>
+                    <div id="sec4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.650890423947!2d73.81877931367154!3d18.499466074650375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfea4bd65a33%3A0x861411c69538d318!2sCity%20Pride-%20Kothrud!5e0!3m2!1sen!2sin!4v1678368640345!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h2>City Pride Road</h2>
+                        <p> We are on city pride kothrud,pune</p>
+                        <br>
+                        <p>HOURS:</p>
+                        <br>
+                        <p>Sunday - Wednesday 11 AM - 10 PM <br>Thursday - Saturday 11 AM - 11 PM </p>
+                        <br>
+                        <p>Contact us at 617-723-9600</p>
+                    </div>
+                    <div id="sec5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15131.256826342002!2d73.88583925941097!3d18.537296242907907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c04e382a1275%3A0x1ec8ee3be12dcff2!2sKoregaon%20Park%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1678368674870!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h2>Koregaon Park</h2>
+                        <p> We are on the westin pune,Koregaon park,pune</p>
+                        <br>
+                        <p>HOURS:</p>
+                        <br>
+                        <p>Sunday - Wednesday 11 AM - 10 PM <br>Thursday - Saturday 11 AM - 11 PM </p>
+                        <br>
+                        <p>Contact us at 617-723-9600</p>
+                    </div>
+                </div>
             </div>
-            <div> <label for="add">Address:</label>
-            <input type="text" id="add" placeholder="address" required>
-            </div> 
-            <button type="submit" class="button" onclick="submit()"><a href="index.html">Submit</a> </button>
-            <a href="index.html">back to home</a>
-</body>
+        </main>
+        <footer class="footer">
+            <div>
+               <img src="images/Logo.png" alt=""> 
+            </div>
+                <div>
+                    <ul>
+                        <li><a href="menu.html">OUR MENU</a></li>
+                        <li><a href="catring.html">LOCATIONS</a></li>
+                        <li><a href="contact.html">CAREERS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/sammit-badodekar-124663241" target="_blank">LINKEDIN</a></li>
+                        <li><a href="https://www.facebook.com/sammit.badodekar.399?mibextid=ZbWKwL" target="_blank">FACEBOOK</a></li>
+                        <li><a href="https://twitter.com/SammitBadodekar?t=BhN3et2iD1uLnq8ILmNz_w&s=09" target="_blank">TWITTER</a></li>
+                        <li><a href="https://www.instagram.com/sammitbadodekar" target="_blank">INSTAGRAM</a></li>
+                    </ul>
+                </div>
+        <div>
+            <p>hello@theuppercrust.pizza</p>
+            <p>Copyright © The Upper Crust 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+    </body>
 </html>

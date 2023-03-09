@@ -44,6 +44,11 @@ body{
     font-weight: bolder;
     padding: 0.5rem;
     text-align: center;
+    font-family: var(--font-strong);
+    font-weight: bolder;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
 }
 .border-bottom:hover{
     border-bottom: 0.2rem solid var(--color-sub);
@@ -232,7 +237,10 @@ main{
     .nav{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+    .navtitle{
+        margin-left: -9rem;
     }
     .list{
         display: none;
@@ -246,6 +254,9 @@ main{
         gap: 1rem;
         max-width: 100%;
     }
+    #checkout-cart{
+        margin: 0rem 0rem 1rem 0rem;
+    }
     .button2{
         background-color: var(--color-sub);
         color: var(--text-color-light);
@@ -257,6 +268,7 @@ main{
     }
     .button,.button4{
         max-width: 100%;
+        margin: 0rem 1rem;
     }
     .footer{
         grid-template-columns: 1fr;

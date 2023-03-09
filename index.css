@@ -25,6 +25,10 @@ body{
     width: 100%;
     object-fit: contain;
 }
+.img1{
+    width: 100%;
+    object-fit: contain;
+}
 .nav{
     display: flex;
     position: sticky;
@@ -54,6 +58,10 @@ a{
 .border-bottom{
     padding: 0.5rem;
     text-align: center;
+    font-weight: bolder;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
 }
 .border-bottom:hover{
     border-bottom: 0.2rem solid var(--color-sub);
@@ -83,6 +91,7 @@ a{
     padding: 0.5rem;
     font-family: var(--font-strong);
     color: var(--color-sub);
+    background-color: transparent;
 }
 .button2:hover{
     background-color: var(--color-hover);
@@ -95,12 +104,13 @@ a{
     padding: 0.3rem 0.3rem 0rem 0.3rem;
     font-family: var(--font-strong);
     color: var(--color-sub);
+    background-color: transparent;
 }
 .button3:hover{
     background-color: var(--color-sub);
     border: none;
 }
-.svg:hover{
+.button3:hover svg{
     fill:white !important;
 }    
 .max-width-60{
@@ -172,7 +182,10 @@ a{
     .nav{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+    .navtitle{
+        margin-left: -9rem;
     }
     .list{
         display: none;
