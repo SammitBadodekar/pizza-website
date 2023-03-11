@@ -1,19 +1,3 @@
-/* code for importing html css and js which is used everywhere */
-const nav = document.querySelector(".nav");
-fetch("/navbar.html")
-.then(res=>res.text())
-.then(data=>{
-    nav.innerHTML = data
-})
-
-const footer = document.querySelector(".footer")
-fetch("/footer.html")
-.then(res=>res.text())
-.then(data=>{
-    footer.innerHTML = data
-})
-
-/* rest code */
 let sum = 0
 var orders = []
 let flex2 = document.getElementsByClassName("flex2")
@@ -76,7 +60,7 @@ function add(n){
     document.getElementById("checkout").style.display = "flex";
     document.getElementById("price").textContent = "₹ " + sum;
     document.getElementById("amount").textContent = "₹ " + sum;
-    button[n].style.display = "none"
+    button[n-1].style.display = "none"
     incDec[n-1].style.display = "flex";
 }
 function inc(n){
@@ -99,7 +83,7 @@ function dec(n){
     let button = document.getElementsByClassName("button")
     if(quantity === 1){
         incDec[n-1].style.display = "none";
-        button[n].style.display = "flex"
+        button[n-1].style.display = "flex"
         quantity+=1
         flex2[n-1].classList.remove("order-active")
     }
