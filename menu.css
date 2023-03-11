@@ -237,10 +237,7 @@ main{
     .nav{
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-    .navtitle{
-        margin-left: -9rem;
+        align-items: stretch;
     }
     .list{
         display: none;
