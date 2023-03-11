@@ -19,33 +19,6 @@
 body{
     color: var(--text-color);
     background-color: var(--bg-color-reg);
-    font-family: var(--font-regular);
-}
-.img{
-    width: 100%;
-    object-fit: contain;
-}
-.img1{
-    width: 100%;
-    object-fit: contain;
-}
-.nav{
-    display: flex;
-    position: sticky;
-    top: 0;
-    max-width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color:var(--bg-color-blur);
-    backdrop-filter: blur(0.5rem);
-    font-family: var(--font-strong);
-    text-transform: uppercase;
-    padding: 1rem;
-}
-.navtitle{
-    font-family: var(--font-regular);
-    font-weight: bolder;
 }
 main{
     display: grid;
@@ -55,36 +28,13 @@ main{
 a{
     color: var(--text-color);
 }
-.border-bottom{
-    padding: 0.5rem;
-    text-align: center;
-    font-weight: bolder;
-    border: none;
-    background-color: transparent;
-    text-transform: uppercase;
+.img{
+    width: 100%;
+    object-fit: contain;
 }
-.border-bottom:hover{
-    border-bottom: 0.2rem solid var(--color-sub);
-}
-.active{
-    border-bottom: 0.2rem solid var(--color-sub);
-}
-.list{
-    display: flex;
-    list-style-type: none;
-    gap: 1rem;
-    align-items: center;
-}
-.button{
-    background-color: var(--color-sub);
-    color: var(--text-color-light);
-    font-family: var(--font-strong);
-    border: none;
-    text-transform: uppercase;
-    padding: 0.7rem;
-}
-.button:hover{
-    background-color: var(--color-hover);
+.img1{
+    width: 100%;
+    object-fit: contain;
 }
 .button2{
     border:0.1rem solid  var(--color-sub);
@@ -141,68 +91,11 @@ a{
     display: flex;
     gap: 0.7rem;
 }
-.footer{
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
-    background-color: var(--color-sub);
-    color: var(--text-color-light);
-    padding: 2rem;
-    gap: 3rem;
-}
-.footer ul {
-    list-style-type: none;
-}
-.footer a:hover {
-    text-decoration: underline;
-}
-.toggle-button{
-    position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    display:none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-}
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
-
 @media screen and (max-width: 600px) {
-    .toggle-button{
-        display: flex;
-        border: none;
-        background-color: transparent;
-        transition: all 0.3s linear;
-    }
-    .nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navtitle{
-        margin-left: -9rem;
-    }
-    .list{
-        display: none;
-        flex-direction: column;
-    }
     main{
         grid-template-columns: 1fr;
         gap: 1rem;
         max-width: 100%;
-    }
-    .footer{
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin: auto;
     }
     .img{
         width: 100%

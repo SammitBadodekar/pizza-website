@@ -21,38 +21,6 @@ body{
     background-color: var(--bg-color-reg);
     font-family: var(--font-regular);
 }
-.nav{
-    display: flex;
-    position: sticky;
-    top: 0;
-    max-width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color:var(--bg-color-blur);
-    backdrop-filter: blur(0.5rem);
-    font-family: var(--font-strong);
-    text-transform: uppercase;
-    padding: 1rem;
-}
-.navtitle{
-    font-family: var(--font-regular);
-    font-weight: bolder;
-}
-.border-bottom{
-    font-family: var(--font-strong);
-    font-weight: bolder;
-    padding: 0.5rem;
-    text-align: center;
-    font-family: var(--font-strong);
-    font-weight: bolder;
-    border: none;
-    background-color: transparent;
-    text-transform: uppercase;
-}
-.border-bottom:hover{
-    border-bottom: 0.2rem solid var(--color-sub);
-}
 .button{
     display:block;
     background-color: var(--color-sub);
@@ -90,12 +58,6 @@ body{
 .button2:hover{
     background-color: var(--color-hover);
 }
-.list{
-    display: flex;
-    list-style-type: none;
-    gap: 1rem;
-    align-items: center;
-}
 a{
     color: var(--text-color-dark);
 }
@@ -113,9 +75,6 @@ main{
     justify-content:space-between;
     flex-wrap: nowrap;
     margin: 0rem 1rem;
-}
-.active{
-    border-bottom: 0.2rem solid var(--color-sub);
 }
 .center{
     display: grid;
@@ -191,63 +150,12 @@ main{
     height: 5rem;
     object-fit: cover;
 }
-.footer{
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
-    background-color: var(--color-sub);
-    color: var(--text-color-light);
-    padding: 2rem;
-    gap: 3rem;
-}
-.footer ul {
-    list-style-type: none;
-}
-.footer a:hover {
-    text-decoration: underline;
-}
-.toggle-button{
-    position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    display:none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-}
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
 @media screen and (max-width: 600px){
     .center{
         margin: 1rem;
     }
     .flex{
         gap: 5rem;
-    }
-    .toggle-button{
-        display: flex;
-        border: none;
-        background-color: transparent;
-        transition: all 0.3s linear;
-    }
-    .nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navtitle{
-        margin-left: -9rem;
-    }
-    .list{
-        display: none;
-        flex-direction: column;
-    }
-    .list.active{
-        display: flex;
     }
     main{
         grid-template-columns: 1fr;
@@ -269,14 +177,6 @@ main{
     .button,.button4{
         max-width: 100%;
         margin: 0rem 1rem;
-    }
-    .footer{
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin: auto;
     }
     #checkout{
         
