@@ -43,10 +43,11 @@ let myOrders = [
         pizza: "Classic Pepperoni [BIG 10'']"
     }
 ]
+let bar = document.getElementsByClassName("bar");
 function menu (){
     if (document.getElementById("flex").style.display === "flex"){
         document.getElementById("flex").style.display = "none"
-        document.getElementById("bar").style.transform = "rotate(0deg)"
+        document.getElementById("bar").style.transform = "rotate(0deg)";
     }
     else{
         document.getElementById("flex").style.display = "flex" 
@@ -115,7 +116,6 @@ checkoutButton[0].addEventListener("click" , function(){
     document.getElementById("checkout").style.display = "none";
     document.querySelector("main").style.display = "none"
 })
-
 button1[0].addEventListener("click",function(){
     add(1)
     orderItems(1)
