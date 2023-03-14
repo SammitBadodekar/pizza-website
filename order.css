@@ -14,17 +14,19 @@ body{
     color: var(--text-color);
     background-color: var(--bg-color-reg);
     font-family: var(--font-regular);
-    background-image: linear-gradient(red ,blue);
+    background-image: linear-gradient(90deg,red ,blue 70%);
     background-repeat: no-repeat;
     background-size:300% 300%;
 }
 .button{
-    background-image: linear-gradient(red,blue);
+    background-image: linear-gradient(300deg,rgba(252, 93, 93, 0.569) 40%,rgba(96, 96, 251, 0.515));
     color: var(--text-color-light);
     font-family: var(--font-bold);
     border: none;
     text-transform: uppercase;
     padding: 0.7rem;
+    background-color: black;
+    border-radius: 0.2rem;
 }
 .button:hover{
     background-color: var(--color-hover);
@@ -42,12 +44,13 @@ body{
     background-color:rgba(255, 255, 255, 0.152);;
     width: 30%;
     border-radius: 1rem;
-    box-shadow: .1rem .1rem 1rem;
+    box-shadow: 0rem 0rem 0.5rem white;
 }
 .card-heading{
     font-family: var(--font-bold);
     font-weight: 900;
     text-align: center;
+    color: var(--text-color-light);
 }
 a{
     font-size: 0.7rem;
@@ -62,16 +65,26 @@ form span{
     margin: -0.5rem;
     font-size: 0.7rem;
 }
-input{
-    height: 2rem;
+input , textarea{
     border: 1px solid gray;
     border-radius: 0.2rem;
     background-color:rgba(255, 255, 255, 0.22);
     color: var(--text-color-light);
 }
+input{
+    height: 1.5rem;
+}
 ::placeholder { 
     color:rgb(216, 215, 215);
   }
+.hidden img{
+    width: 7rem;
+}
+.hidden{
+    display: none;
+    font-family: var(--font-button);
+    justify-content: center;
+}
 @media screen and (max-width:600px) {
     .placeorder{
        width:80%;

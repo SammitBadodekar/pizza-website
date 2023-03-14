@@ -158,7 +158,28 @@ button1[7].addEventListener("click",function(){
 })
 
 function placeOrder(){
-    alert("Successfully Placed Your Order")
+    let inputName = document.getElementById("name").value;
+    let inputPhno = document.getElementById("phno").value;
+    let inputAddress = document.getElementById("add").value;
+    let formAction = document.querySelector("form")
+
+    if(inputName.value === "" && inputPhno.value === "" && inputAddress.value === ""){
+        alert("enter valid input")
+    }
+    else if(inputName.length <=3 && inputPhno.length <=10 && inputAddress.length <=10){
+        alert("name should be atleast 5 characters \nmobile no. should be atleast 10 characters\naddress should be atleast 10 characters")
+    }
+    else if(parseInt(inputName) || parseInt(inputAddress)){
+        alert("name and address should be only alphabets") 
+    }
+    else{ 
+    alert("successfully placed your order")
+    let placeOrder = getElementsById("placeorder")
+    let confirm = getElementsByID("hidden")
+    
+        placeOrder.style.display = "none"
+        confirm.style.display = "flex"
+    }  
 }
 function submit(){
     alert("Submitted successfully")
