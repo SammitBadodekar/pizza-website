@@ -173,12 +173,8 @@ function placeOrder(){
         alert("name and address should be only alphabets") 
     }
     else{ 
-    alert("successfully placed your order")
-    let placeOrder = getElementsById("placeorder")
-    let confirm = getElementsByID("hidden")
-    
-        placeOrder.style.display = "none"
-        confirm.style.display = "flex"
+        alert("Successfully Placed Your Order")
+        formAction.action ="index.html";
     }  
 }
 function submit(){
