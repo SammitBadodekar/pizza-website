@@ -14,11 +14,14 @@ body{
     color: var(--text-color);
     background-color: var(--bg-color-reg);
     font-family: var(--font-regular);
+    background-image: linear-gradient(red ,blue);
+    background-repeat: no-repeat;
+    background-size:300% 300%;
 }
 .button{
-    background-color: var(--color-sub);
+    background-image: linear-gradient(red,blue);
     color: var(--text-color-light);
-    font-family: var(--font-strong);
+    font-family: var(--font-bold);
     border: none;
     text-transform: uppercase;
     padding: 0.7rem;
@@ -28,6 +31,7 @@ body{
 }
 .placeorder{
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -35,28 +39,43 @@ body{
     margin: auto;
     gap: 1rem;
     padding: 1rem;
-    background-color: var(--text-color-light);
+    background-color:rgba(255, 255, 255, 0.152);;
     width: 30%;
     border-radius: 1rem;
-    margin-top: 5rem;
     box-shadow: .1rem .1rem 1rem;
 }
 .card-heading{
     font-family: var(--font-bold);
     font-weight: 900;
+    text-align: center;
 }
 a{
     font-size: 0.7rem;
     text-decoration: none;
-    color: var(--text-color-dark);
+    color: var(--text-color-light);
 }
 a:hover{
     color: #333;
 }
+form span{
+    color:yellow;
+    margin: -0.5rem;
+    font-size: 0.7rem;
+}
+input{
+    height: 2rem;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    background-color:rgba(255, 255, 255, 0.22);
+    color: var(--text-color-light);
+}
+::placeholder { 
+    color:rgb(216, 215, 215);
+  }
 @media screen and (max-width:600px) {
     .placeorder{
        width:80%;
-       margin: auto; 
+       margin:5rem auto; 
     }
     
 }

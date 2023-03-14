@@ -143,27 +143,6 @@ a{
     display: flex;
     gap: 0.7rem;
 }
-.animation{
-    position: relative;
-    grid-row-start: 2;
-    grid-column-start:1;
-    grid-column-end:3 ;
-    font-size: x-large;
-    max-width: 200%;
-    color: var(--color-sub);
-    animation: textflow 5s linear infinite ;
-}
-@keyframes textflow {
-    from {
-        margin-left: 100%;
-        width: 400%; 
-      }
-    
-      to {
-        margin-left: -50%;
-        width: 400%;
-      }
-  }
 .footer{
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
@@ -234,25 +213,4 @@ a{
     .child6{
         grid-row-start: 8;
     }
-    .animation{
-        position: relative;
-        grid-row-start: 2;
-        grid-column-start:1;
-        grid-column-end:1 ;
-        font-size: x-large;
-        color: var(--color-sub);
-        animation: textflow 5s linear infinite ;
-        max-width: 150%;
-    }
-    @keyframes textflow {
-        from {
-            margin-left: 100%;
-            width: 150%; 
-          }
-        
-          to {
-            margin-left: -100%;
-            width: 200%;
-          }
-      }
 }
