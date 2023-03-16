@@ -208,9 +208,9 @@ a{
         
     }
     .child4{
-        grid-row-start: 4;
+        grid-row-start: 3;
     }
     .child6{
-        grid-row-start: 8;
+        grid-row-start: 7;
     }
 }
